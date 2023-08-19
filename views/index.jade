@@ -1,8 +1,8 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
-  each card in arr2
-    a.card(href='https://dev.to'+card.link target='_blank')
-      | #{card.title}
+  h1 Dev Articles Argegator
+  .container
+    each card in arr2
+      a.card(href='https://dev.to'+card.link target='_blank')
+        | #{card.title}
